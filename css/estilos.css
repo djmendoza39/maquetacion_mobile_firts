@@ -1,0 +1,237 @@
+/*
+
+1.Posicionamiento
+2.Modelo (Box Model)
+3.Tipografía
+4.Visuales
+5.Otros
+
+*/
+
+:root{
+    --colorAzul: #3F2E8F;
+    --colorClaro: #DEAA81;
+    --colorMorado: #816BDF;
+    --colorVerdeC: #54DE55;
+    --colorVerdeO: #3F913F;
+    --colorWhite: #FFFFFF;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(210deg, #402e8f96, #dea98185, #806bdf88);
+    padding: 0 1.5rem;
+}
+
+
+
+.header__title-contenido h1{
+    font-size: 2.6rem;
+    font-weight: bolder;
+    margin: 1.5rem 0px;
+
+}
+
+.header__title-contenido p{
+    font-size: 1.4rem;
+}
+
+.header__title-contenido a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+    background-color: var(--colorVerdeC);
+    color: var(--colorAzul);
+    padding: 1.2rem;
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: -2rem;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
+}
+
+
+/* estilos main */
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--colorWhite);
+    
+}
+
+main .main-excgange-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+    min-width: 320px;
+    height: inherit;
+    padding: 5rem 0;;
+    text-align: center;
+    
+    
+}
+
+main .main-excgange-container .background-image{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url(../img/Bitcoin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main-excgange-container--title{
+    
+    width: 90%;
+    min-width: 300px;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+.main-excgange-container--title h2{
+    margin: 1.5rem 0;
+    padding: 1.5rem 1.5rem;
+    font-size: 2rem;
+
+}
+
+/* Seccion tabla */
+
+
+
+/* seccion beneficios */
+
+.main-container__beneficios{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    background-color: var(--colorAzul);
+    padding-bottom: 5rem;
+    
+    
+}
+
+.main-container--icon{
+    position: absolute;
+    top:-12px;
+    left: calc(50% - 25px);
+    
+}
+
+
+
+.main-container__beneficios .main-beneficios--title{
+    width: 70%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main-container__beneficios .main-beneficios--title h3{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--colorWhite);
+}
+
+.main-container__beneficios .main-beneficios--title p{
+    color: var(--colorMorado);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+
+}
+
+
+
+.main-beneficios--logo-container{
+    background-color: #10063a;
+    border-radius: .5rem;
+    width: 70%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    margin-top: 2.5rem;  
+}
+
+.main-beneficios--logo{
+    width: 20px;
+    height: 20px;
+    background-image: url(../icons/clock.svg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.main-beneficios--logo-container h4{
+    color: #3F913F;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 1.5rem 0;
+}
+
+.main-beneficios--logo-container p{
+    color: var(--colorMorado);
+    padding-bottom: 2rem;
+}
+
+/* seccion conocelos */
+
+.main-container-conocenos{
+    width: 100%;
+    height: 50vh;
+    background-color: #DEAA81;
+    background-image: url(../img/bitcoinbaby2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    
+}
+
+.main-container-conocenos h2{
+    color: var(--colorWhite);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 15rem;
+}
+
+
+
+
+
+
