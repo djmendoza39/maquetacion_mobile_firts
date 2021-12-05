@@ -27,10 +27,15 @@
 html{
     font-size: 62.5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 p{
     font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
@@ -229,6 +234,144 @@ main .main-excgange-container .background-image{
     text-align: center;
     line-height: 15rem;
 }
+
+
+/* seccion planes de pago */
+.main-container__planes{
+    width: 100%;
+    height: auto;
+    background-color: var(--colorWhite);
+    
+}
+
+.main-container--title{
+    width: 70%;
+    min-width: 310px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-align: center;
+
+}
+
+.main-container--title h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+
+}
+
+.main-container--title p{
+    color: var(--colorMorado);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+
+}
+
+.main-container__precios{
+
+    
+    width: 100%;
+    display: flex;
+    height: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:  x proximity;
+    
+
+}
+
+.main-precio--numero{
+    background-image: url(../img/numero99.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    
+}
+
+.main-container__precios--info{
+    background-color: var(--colorAzul);
+    border-radius: .5rem;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
+    width: 70%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 50px 10px 0;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+    position: relative;
+    scroll-snap-align: center;
+ 
+    
+}
+
+.main-container__precios--info span{
+    border-radius: .5rem;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.14) , 0px 3px 1px -2px rgba(0,0,0,0.12) , 0px 1px 5px 0px rgba(0,0,0,0.2) ;
+    display: block;
+    padding: 1.5rem;
+    background-color: var(--colorClaro);
+    color: black;
+    width: 200px;
+    min-width: 200px;
+    position: absolute;
+    top: calc(0% - 20px);
+    left: calc(50% - 100px);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main-container__precios--info p{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 2rem 0;
+    color: var(--colorVerdeC);
+
+}
+
+.main-container__precios--info a{
+    display: block;
+    padding: 1.5rem;
+    border: solid var(--colorClaro);
+    border-radius: .5rem;
+    color: var(--colorVerdeO);
+    font-size: 1.4rem;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+}
+/* seccion footer */
+footer{
+    margin-top: 4rem;
+    width: 100%;
+    height: 15vh;
+    background-color: var(--colorMorado);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .main-footer-logo{
+    background-image: url(../img/logo-footer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
 
 
 
